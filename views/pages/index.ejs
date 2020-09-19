@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="public/styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="public/styles/style.css">
 
 
 </head>
+
 <body>
-    <h1> Hello mai make book app </h1>
-<h2>mai</h2>
-    <!-- <script src="../../server.js"></script> -->
+  <h1> Hello mai make book app </h1>
+
+
+  <h4> Search by Title or Author</h4>
+
+  
+  <form action="/searches" method="POST">
+    <div>
+      <input type="text" , placeholder="Enter a title or Author" , name="BookTitle" required>
+    </div>
+
+    <div>
+      <label for="title"> Title</label>
+      <input type="radio" name="title" value="title" required>
+    </div>
+
+    <div>
+      <label for="title"> Author</label>
+      <input type="radio" name="title" value="author" required>
+    </div>
+
+    <button type="submit">Search the Google Books API </button>
+  </form>
+
+
 </body>
+
 </html>
